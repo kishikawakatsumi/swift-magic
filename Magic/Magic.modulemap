@@ -1,0 +1,6 @@
+framework module Magic {
+    umbrella header "Magic.h"
+
+    export *
+    module * { export * }
+}
