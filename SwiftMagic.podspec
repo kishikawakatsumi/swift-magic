@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.source = { git: 'https://github.com/kishikawakatsumi/swift-magic.git', tag: "v#{spec.version}" }
   spec.source_files = 'Magic/**/*.{h,swift}'
+  spec.resources = 'Magic/magic.mgc'
   spec.module_name = 'Magic'
   spec.ios.deployment_target = '8.0'
   spec.swift_version = '4.2'
