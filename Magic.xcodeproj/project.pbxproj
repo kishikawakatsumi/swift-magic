@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		149975EF21CE8A2C00B72A49 /* Magic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149975E521CE8A2C00B72A49 /* Magic.framework */; };
 		149975F421CE8A2C00B72A49 /* MagicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149975F321CE8A2C00B72A49 /* MagicTests.swift */; };
-		149975F621CE8A2C00B72A49 /* Magic.h in Headers */ = {isa = PBXBuildFile; fileRef = 149975E821CE8A2C00B72A49 /* Magic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		149975F621CE8A2C00B72A49 /* SwiftMagic.h in Headers */ = {isa = PBXBuildFile; fileRef = 149975E821CE8A2C00B72A49 /* SwiftMagic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1499760021CE8A6400B72A49 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149975FF21CE8A6400B72A49 /* Magic.swift */; };
 		1499760221CE8CC700B72A49 /* magic.mgc in Resources */ = {isa = PBXBuildFile; fileRef = 1499760121CE8CC700B72A49 /* magic.mgc */; };
+		14C397F521CEA95F00E6236D /* MagicPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C397F321CEA95F00E6236D /* MagicPrivate.h */; };
+		14C397F621CEA95F00E6236D /* MagicPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C397F421CEA95F00E6236D /* MagicPrivate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +28,15 @@
 
 /* Begin PBXFileReference section */
 		149975E521CE8A2C00B72A49 /* Magic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		149975E821CE8A2C00B72A49 /* Magic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Magic.h; sourceTree = "<group>"; };
+		149975E821CE8A2C00B72A49 /* SwiftMagic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftMagic.h; sourceTree = "<group>"; };
 		149975E921CE8A2C00B72A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149975EE21CE8A2C00B72A49 /* MagicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		149975F321CE8A2C00B72A49 /* MagicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTests.swift; sourceTree = "<group>"; };
 		149975F521CE8A2C00B72A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149975FF21CE8A6400B72A49 /* Magic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
 		1499760121CE8CC700B72A49 /* magic.mgc */ = {isa = PBXFileReference; lastKnownFileType = file; path = magic.mgc; sourceTree = "<group>"; };
+		14C397F321CEA95F00E6236D /* MagicPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicPrivate.h; sourceTree = "<group>"; };
+		14C397F421CEA95F00E6236D /* MagicPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicPrivate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,10 @@
 		149975E721CE8A2C00B72A49 /* Magic */ = {
 			isa = PBXGroup;
 			children = (
-				149975E821CE8A2C00B72A49 /* Magic.h */,
+				149975E821CE8A2C00B72A49 /* SwiftMagic.h */,
 				149975FF21CE8A6400B72A49 /* Magic.swift */,
+				14C397F321CEA95F00E6236D /* MagicPrivate.h */,
+				14C397F421CEA95F00E6236D /* MagicPrivate.m */,
 				1499760121CE8CC700B72A49 /* magic.mgc */,
 				149975E921CE8A2C00B72A49 /* Info.plist */,
 			);
@@ -99,7 +105,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149975F621CE8A2C00B72A49 /* Magic.h in Headers */,
+				14C397F521CEA95F00E6236D /* MagicPrivate.h in Headers */,
+				149975F621CE8A2C00B72A49 /* SwiftMagic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1499760021CE8A6400B72A49 /* Magic.swift in Sources */,
+				14C397F621CEA95F00E6236D /* MagicPrivate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +376,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Vendor/magic/lib\"";
+				MODULEMAP_FILE = "/Users/katsumi/Desktop/swift-magic/Magic/Magic.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.Magic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -399,6 +408,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Vendor/magic/lib\"";
+				MODULEMAP_FILE = "/Users/katsumi/Desktop/swift-magic/Magic/Magic.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.Magic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -1,0 +1,10 @@
+framework module Magic {
+    umbrella header "SwiftMagic.h"
+
+    export *
+    module * { export * }
+
+    explicit module Private {
+        link "magic"
+    }
+}
