@@ -5,6 +5,6 @@ framework module Magic {
     module * { export * }
 
     explicit module Private {
-        link "magic"
+        link "cmagic"
     }
 }
