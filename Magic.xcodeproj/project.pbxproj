@@ -63,6 +63,7 @@
 			children = (
 				149975E721CE8A2C00B72A49 /* Magic */,
 				149975F221CE8A2C00B72A49 /* MagicTests */,
+				14C397FB21CEB07C00E6236D /* Configurations */,
 				149975E621CE8A2C00B72A49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,7 +84,6 @@
 				149975FF21CE8A6400B72A49 /* Magic.swift */,
 				1499760121CE8CC700B72A49 /* magic.mgc */,
 				149975E921CE8A2C00B72A49 /* Info.plist */,
-				14C397FB21CEB07C00E6236D /* Configurations */,
 			);
 			path = Magic;
 			sourceTree = "<group>";
