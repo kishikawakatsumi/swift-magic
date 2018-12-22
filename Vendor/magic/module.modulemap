@@ -1,0 +1,5 @@
+module magic {
+    private header "include/magic.h"
+    link "magic"
+    link "z"
+}
