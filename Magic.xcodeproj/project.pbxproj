@@ -326,11 +326,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14C397F721CEB01200E6236D /* Magic.xcconfig */;
 			buildSettings = {
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/magic/lib/iphoneos",
-					"$(PROJECT_DIR)/Vendor/magic/lib/macosx",
-				);
 			};
 			name = Debug;
 		};
@@ -338,11 +333,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14C397F721CEB01200E6236D /* Magic.xcconfig */;
 			buildSettings = {
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/magic/lib/iphoneos",
-					"$(PROJECT_DIR)/Vendor/magic/lib/macosx",
-				);
 			};
 			name = Release;
 		};
