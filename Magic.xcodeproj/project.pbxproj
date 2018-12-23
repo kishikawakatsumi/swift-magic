@@ -11,8 +11,8 @@
 		149975F421CE8A2C00B72A49 /* MagicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149975F321CE8A2C00B72A49 /* MagicTests.swift */; };
 		149975F621CE8A2C00B72A49 /* Magic.h in Headers */ = {isa = PBXBuildFile; fileRef = 149975E821CE8A2C00B72A49 /* Magic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1499760021CE8A6400B72A49 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149975FF21CE8A6400B72A49 /* Magic.swift */; };
-		1499760221CE8CC700B72A49 /* magic.mgc in Resources */ = {isa = PBXBuildFile; fileRef = 1499760121CE8CC700B72A49 /* magic.mgc */; };
-		14D2EC6F21CFC92B00693940 /* magic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14D2EC6C21CFC91C00693940 /* magic.h */; };
+		14D2ED2321CFE3A100693940 /* magic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14D2ED1A21CFE38B00693940 /* magic.h */; };
+		14D2ED2421CFE3A700693940 /* magic.mgc in Resources */ = {isa = PBXBuildFile; fileRef = 14D2ED2221CFE38B00693940 /* magic.mgc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 			dstPath = include/magic;
 			dstSubfolderSpec = 6;
 			files = (
-				14D2EC6F21CFC92B00693940 /* magic.h in CopyFiles */,
+				14D2ED2321CFE3A100693940 /* magic.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,12 +46,13 @@
 		149975F321CE8A2C00B72A49 /* MagicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTests.swift; sourceTree = "<group>"; };
 		149975F521CE8A2C00B72A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149975FF21CE8A6400B72A49 /* Magic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
-		1499760121CE8CC700B72A49 /* magic.mgc */ = {isa = PBXFileReference; lastKnownFileType = file; path = magic.mgc; sourceTree = "<group>"; };
 		14C397F721CEB01200E6236D /* Magic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Magic.xcconfig; sourceTree = "<group>"; };
 		14C397F821CEB04D00E6236D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14C397F921CEB05700E6236D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		14C397FC21CEB36500E6236D /* MagicTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MagicTests.xcconfig; sourceTree = "<group>"; };
-		14D2EC6C21CFC91C00693940 /* magic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magic.h; sourceTree = "<group>"; };
+		14D2ED1A21CFE38B00693940 /* magic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magic.h; sourceTree = "<group>"; };
+		14D2ED1E21CFE38B00693940 /* libmagic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmagic.a; sourceTree = "<group>"; };
+		14D2ED2221CFE38B00693940 /* magic.mgc */ = {isa = PBXFileReference; lastKnownFileType = file; path = magic.mgc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +80,7 @@
 				149975E721CE8A2C00B72A49 /* Magic */,
 				149975F221CE8A2C00B72A49 /* MagicTests */,
 				14C397FB21CEB07C00E6236D /* Configurations */,
-				14D2EC6921CFC91C00693940 /* Vendor */,
+				14D2ED1721CFE38B00693940 /* Vendor */,
 				149975E621CE8A2C00B72A49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +99,6 @@
 			children = (
 				149975E821CE8A2C00B72A49 /* Magic.h */,
 				149975FF21CE8A6400B72A49 /* Magic.swift */,
-				1499760121CE8CC700B72A49 /* magic.mgc */,
 				149975E921CE8A2C00B72A49 /* Info.plist */,
 			);
 			path = Magic;
@@ -124,28 +124,54 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-		14D2EC6921CFC91C00693940 /* Vendor */ = {
+		14D2ED1721CFE38B00693940 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				14D2EC6A21CFC91C00693940 /* magic */,
+				14D2ED1821CFE38B00693940 /* magic */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
 		};
-		14D2EC6A21CFC91C00693940 /* magic */ = {
+		14D2ED1821CFE38B00693940 /* magic */ = {
 			isa = PBXGroup;
 			children = (
-				14D2EC6B21CFC91C00693940 /* include */,
+				14D2ED1921CFE38B00693940 /* include */,
+				14D2ED1C21CFE38B00693940 /* lib */,
+				14D2ED1F21CFE38B00693940 /* share */,
 			);
 			path = magic;
 			sourceTree = "<group>";
 		};
-		14D2EC6B21CFC91C00693940 /* include */ = {
+		14D2ED1921CFE38B00693940 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				14D2EC6C21CFC91C00693940 /* magic.h */,
+				14D2ED1A21CFE38B00693940 /* magic.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		14D2ED1C21CFE38B00693940 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				14D2ED1E21CFE38B00693940 /* libmagic.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		14D2ED1F21CFE38B00693940 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				14D2ED2021CFE38B00693940 /* misc */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		14D2ED2021CFE38B00693940 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				14D2ED2221CFE38B00693940 /* magic.mgc */,
+			);
+			path = misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1499760221CE8CC700B72A49 /* magic.mgc in Resources */,
+				14D2ED2421CFE3A700693940 /* magic.mgc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +326,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14C397F721CEB01200E6236D /* Magic.xcconfig */;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/magic/lib/iphoneos",
+					"$(PROJECT_DIR)/Vendor/magic/lib/macosx",
+				);
 			};
 			name = Debug;
 		};
@@ -307,6 +338,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14C397F721CEB01200E6236D /* Magic.xcconfig */;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/magic/lib/iphoneos",
+					"$(PROJECT_DIR)/Vendor/magic/lib/macosx",
+				);
 			};
 			name = Release;
 		};
