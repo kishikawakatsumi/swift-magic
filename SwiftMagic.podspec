@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'swift-magic'
-  spec.version = '0.5.3'
+  spec.version = '0.5.4'
   spec.summary = 'A Swift wrapper for libmagic'
   spec.description = <<-DESC
                        swift-magic is a Swift interface to the libmagic file type identification library. libmagic identifies file types by checking their headers according to a predefined list of file types. This functionality is exposed to the command line by the Unix command `file`.
