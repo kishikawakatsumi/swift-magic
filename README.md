@@ -16,7 +16,7 @@ let description = try Magic.shared.file(path)
 ```
 
 ## Requirements
-SpreadsheetView is written in Swift 3. Compatible with iOS 8.0+
+swift-magic is written in Swift 4.2. Compatible with iOS 8.0+
 
 ## Installation
 
