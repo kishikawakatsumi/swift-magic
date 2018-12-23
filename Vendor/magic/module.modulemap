@@ -1,0 +1,5 @@
+module cmagic {
+    header "include/magic.h"
+    link "magic"
+    link "z"
+}
