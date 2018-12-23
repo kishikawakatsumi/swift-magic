@@ -12,6 +12,7 @@
 		149975F621CE8A2C00B72A49 /* Magic.h in Headers */ = {isa = PBXBuildFile; fileRef = 149975E821CE8A2C00B72A49 /* Magic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1499760021CE8A6400B72A49 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149975FF21CE8A6400B72A49 /* Magic.swift */; };
 		1499760221CE8CC700B72A49 /* magic.mgc in Resources */ = {isa = PBXBuildFile; fileRef = 1499760121CE8CC700B72A49 /* magic.mgc */; };
+		14D2EC6F21CFC92B00693940 /* magic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14D2EC6C21CFC91C00693940 /* magic.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,19 @@
 			remoteInfo = Magic;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14D2EC6821CFC8DC00693940 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = include/magic;
+			dstSubfolderSpec = 6;
+			files = (
+				14D2EC6F21CFC92B00693940 /* magic.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		149975E521CE8A2C00B72A49 /* Magic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +51,7 @@
 		14C397F821CEB04D00E6236D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14C397F921CEB05700E6236D /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		14C397FC21CEB36500E6236D /* MagicTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MagicTests.xcconfig; sourceTree = "<group>"; };
+		14D2EC6C21CFC91C00693940 /* magic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +79,7 @@
 				149975E721CE8A2C00B72A49 /* Magic */,
 				149975F221CE8A2C00B72A49 /* MagicTests */,
 				14C397FB21CEB07C00E6236D /* Configurations */,
+				14D2EC6921CFC91C00693940 /* Vendor */,
 				149975E621CE8A2C00B72A49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +124,30 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		14D2EC6921CFC91C00693940 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				14D2EC6A21CFC91C00693940 /* magic */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		14D2EC6A21CFC91C00693940 /* magic */ = {
+			isa = PBXGroup;
+			children = (
+				14D2EC6B21CFC91C00693940 /* include */,
+			);
+			path = magic;
+			sourceTree = "<group>";
+		};
+		14D2EC6B21CFC91C00693940 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				14D2EC6C21CFC91C00693940 /* magic.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -127,6 +167,7 @@
 			buildConfigurationList = 149975F921CE8A2C00B72A49 /* Build configuration list for PBXNativeTarget "Magic" */;
 			buildPhases = (
 				149975E021CE8A2C00B72A49 /* Headers */,
+				14D2EC6821CFC8DC00693940 /* CopyFiles */,
 				149975E121CE8A2C00B72A49 /* Sources */,
 				149975E221CE8A2C00B72A49 /* Frameworks */,
 				149975E321CE8A2C00B72A49 /* Resources */,
