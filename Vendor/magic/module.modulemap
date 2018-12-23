@@ -1,4 +1,4 @@
-module cmagic {
+module magic {
     header "include/magic.h"
     link "magic"
     link "z"
