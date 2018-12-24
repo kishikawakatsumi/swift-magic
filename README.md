@@ -1,3 +1,5 @@
+[![Build Status](https://app.bitrise.io/app/b4717764acae567c/status.svg?token=X3pkDXIRd3cRfUST2aHDyA)](https://app.bitrise.io/app/b4717764acae567c) [![CocoaPods](https://img.shields.io/cocoapods/v/swift-magic.svg?style=flat)](https://cocoapods.org/pods/swift-magic) [![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 # swift-magic
 A Swift wrapper for libmagic
 
