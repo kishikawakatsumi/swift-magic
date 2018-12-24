@@ -5,7 +5,7 @@ framework module Magic {
     module * {export *}
 }
 
-module magic {
+module cmagic {
     header "include/magic/magic.h"
     link "magic"
     link "z"

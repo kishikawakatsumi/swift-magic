@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import magic
+import cmagic
 
 public final class Magic {
     public static let shared = Magic()
